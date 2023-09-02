@@ -13,5 +13,8 @@ export const UlFriendsList = styled('ul')(() => {
 export const FriendsItem = styled('li')(() => {
   return {
     outline: 'solid 1px black',
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
   };
 });

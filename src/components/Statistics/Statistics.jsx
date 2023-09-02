@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { SectionStat, UlStat, LiStatItem } from './Statistics.styled';
 
 const Statistics = ({ title, stats }) => {
@@ -18,3 +19,8 @@ const Statistics = ({ title, stats }) => {
 };
 
 export default Statistics;
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array.isRequired,
+};

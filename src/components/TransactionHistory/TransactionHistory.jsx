@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   TableContainer,
   ThType,
@@ -37,3 +38,7 @@ const TransactionHistory = ({ items }) => {
 };
 
 export default TransactionHistory;
+
+TransactionHistory.propTypes = {
+  items: PropTypes.array.isRequired,
+};
