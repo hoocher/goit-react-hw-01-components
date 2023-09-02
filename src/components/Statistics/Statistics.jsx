@@ -10,7 +10,7 @@ const Statistics = ({ title, stats }) => {
         {stats.map(stat => (
           <LiStatItem key={stat.id}>
             <span>{stat.label}</span>
-            <span> {stat.percentage}</span>
+            <span> {stat.percentage}%</span>
           </LiStatItem>
         ))}
       </UlStat>
