@@ -18,3 +18,9 @@ export const FriendsItem = styled('li')(() => {
     alignItems: 'center',
   };
 });
+
+export const IsOffline = styled('span')(() => {
+  return {
+    backgroundColor: 'red',
+  };
+});

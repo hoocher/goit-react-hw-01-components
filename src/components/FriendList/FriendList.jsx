@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { UlFriendsList, FriendsItem } from './FriendList.styled';
+import { UlFriendsList, FriendsItem, IsOffline } from './FriendList.styled';
 
 const FriendList = ({ friends }) => {
   return (
@@ -15,7 +15,7 @@ export default FriendList;
 const FriendListItem = friend => {
   return (
     <FriendsItem key={friend.id}>
-      <span>{friend.isOnline ? 'online' : 'offLine'}</span>
+      {friend.isOnline ? <span>Online</span> : <IsOffline>Offline</IsOffline>}
       <img src={friend.avatar} alt="User avatar" width="48" />
       <p>{friend.name}</p>
     </FriendsItem>
