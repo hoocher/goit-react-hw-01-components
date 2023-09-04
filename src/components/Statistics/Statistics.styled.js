@@ -26,7 +26,7 @@ export const LiStatItem = styled('li')(() => {
 
 export const H2Title = styled('h2')(() => {
   return {
-    padding: '16px',
+    padding: '20px',
     textAlign: 'center',
     textTransform: 'uppercase',
   };
