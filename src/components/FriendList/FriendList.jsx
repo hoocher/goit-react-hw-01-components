@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { UlFriendsList, FriendsItem, IsOffline } from './FriendList.styled';
+import { UlFriendsList } from './FriendList.styled';
 import FriendListItem from './FriendsItem';
 
 const FriendList = ({ friends }) => {
