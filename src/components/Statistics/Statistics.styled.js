@@ -23,3 +23,10 @@ export const LiStatItem = styled('li')(() => {
     outline: 'solid black 1px',
   };
 });
+
+export const H2Title = styled('h2')(() => {
+  return {
+    padding: '16px',
+    textAlign: 'center',
+  };
+});

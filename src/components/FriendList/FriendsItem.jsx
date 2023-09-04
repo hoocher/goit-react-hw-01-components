@@ -1,11 +1,11 @@
 import { FriendsItem, IsOffline } from './FriendList.styled';
 
-const FriendListItem = ({ id, isOnline, avatar, name }) => {
+const FriendListItem = ({ friend }) => {
   return (
-    <FriendsItem key={id}>
-      {isOnline ? <span>Online</span> : <IsOffline>Offline</IsOffline>}
-      <img src={avatar} alt="User avatar" width="48" />
-      <p>{name}</p>
+    <FriendsItem key={friend.id}>
+      {friend.isOnline ? <span>Online</span> : <IsOffline>Offline</IsOffline>}
+      <img src={friend.avatar} alt="User avatar" width="48" />
+      <p>{friend.name}</p>
     </FriendsItem>
   );
 };

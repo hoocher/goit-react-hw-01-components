@@ -6,7 +6,9 @@ import FriendListItem from './FriendsItem';
 const FriendList = ({ friends }) => {
   return (
     <UlFriendsList>
-      {friends.map(friend => FriendListItem(friend))}
+      {friends.map(friend => (
+        <FriendListItem friend={friend} />
+      ))}
     </UlFriendsList>
   );
 };
